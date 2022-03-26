@@ -7,5 +7,6 @@ out/
 .svn
 log/*.log
 tmp/**
+.ipynb_checkpoints/
 node_modules/
 .sass-cache
