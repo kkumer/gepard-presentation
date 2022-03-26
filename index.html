@@ -14742,7 +14742,7 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Gepard - Tool for studying GPDs</p>
+<p><strong>Gepard</strong> - tool for studying GPDs</p>
 <ul>
 <li>Modelling Generalized Parton Distributions (GPDs) and Compton form factors (CFFs).</li>
 <li>Perturbative NLO QCD evolution of GPDs</li>
@@ -14969,8 +14969,9 @@ div.jp-OutputPrompt {
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Experimental measurement datapoint:</span>
 <span class="n">pt</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">DataPoint</span><span class="p">(</span><span class="n">xB</span><span class="o">=</span><span class="mf">0.348</span><span class="p">,</span> <span class="n">t</span><span class="o">=-</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">Q2</span><span class="o">=</span><span class="mf">3.</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> 
-                 <span class="n">process</span><span class="o">=</span><span class="s1">&#39;ep2epgamma&#39;</span><span class="p">,</span> <span class="n">exptype</span><span class="o">=</span><span class="s1">&#39;fixed target&#39;</span><span class="p">,</span>
-                 <span class="n">in1energy</span><span class="o">=</span><span class="mf">6.</span><span class="p">,</span> <span class="n">in1charge</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">in1polarization</span><span class="o">=+</span><span class="mi">1</span><span class="p">,</span>
+                 <span class="n">process</span><span class="o">=</span><span class="s1">&#39;ep2epgamma&#39;</span><span class="p">,</span> <span class="n">in1charge</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
+                 <span class="n">exptype</span><span class="o">=</span><span class="s1">&#39;fixed target&#39;</span><span class="p">,</span> <span class="n">in1energy</span><span class="o">=</span><span class="mf">6.</span><span class="p">,</span>
+                 <span class="n">in1polarization</span><span class="o">=+</span><span class="mi">1</span><span class="p">,</span>
                  <span class="n">observable</span><span class="o">=</span><span class="s1">&#39;XS&#39;</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="mf">0.21</span><span class="p">,</span> <span class="n">err</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
 
 <span class="n">pt</span><span class="o">.</span><span class="n">W</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">xi</span>   <span class="c1"># auto-calculated kinematics</span>
@@ -16786,7 +16787,7 @@ TOTAL = 18
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># kinematical cuts</span>
-<span class="n">cut_pts</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">dset</span><span class="p">[</span><span class="mi">39</span><span class="p">],</span> <span class="n">criteria</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Q2 &gt; 5&#39;</span><span class="p">,</span> <span class="s1">&#39;t &lt; -0.2&#39;</span><span class="p">])</span>
+<span class="n">cut_pts</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">dset</span><span class="p">[</span><span class="mi">39</span><span class="p">],</span> <span class="n">criteria</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Q2 &gt; 5&#39;</span><span class="p">])</span>
 <span class="n">cut_pts</span><span class="o">.</span><span class="n">df</span><span class="p">()</span><span class="o">.</span><span class="n">Q2</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>  <span class="c1"># minimal Q2 in set after cut</span>
 </pre></div>
 
@@ -16863,7 +16864,7 @@ TOTAL = 18
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16911,6 +16912,17 @@ jp-needs-light-background
 
 </div>
 
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="For-more,-go-to-gepard.phy.hr">For more, go to <a href="https://gepard.phy.hr/">gepard.phy.hr</a><a class="anchor-link" href="#For-more,-go-to-gepard.phy.hr">&#182;</a></h2>
+</div>
+</div>
+</div>
 </div></section></section>
 </div>
 </div>
