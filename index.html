@@ -14639,7 +14639,7 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
@@ -14656,13 +14656,13 @@ div.jp-OutputPrompt {
 <span class="p">.</span><span class="nc">reveal</span><span class="w"> </span><span class="nt">div</span><span class="p">.</span><span class="nc">highlight</span><span class="o">&gt;</span><span class="nt">pre</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span>
 <span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="p">.</span><span class="nc">reveal</span><span class="w"> </span><span class="nt">div</span><span class="p">.</span><span class="nc">jp-OutputArea-output</span><span class="o">&gt;</span><span class="nt">pre</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span>
 <span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">90</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
@@ -14702,13 +14702,13 @@ div.jp-OutputPrompt {
 .reveal div.highlight>pre {
     margin: 0; 
     width: 100%;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .reveal div.jp-OutputArea-output>pre {
     margin: 0; 
     width: 90%;
-    font-size: 20px;
+    font-size: 25px;
     box-shadow: none;
 }
 
@@ -14741,9 +14741,9 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Tool for studying GPDs</p>
+<p>Gepard - Tool for studying GPDs</p>
 <ul>
-<li>Modelling Generalized Parton Distributions (GPD) and Compton form factors (CFF).</li>
+<li>Modelling Generalized Parton Distributions (GPDs) and Compton form factors (CFFs).</li>
 <li>Perturbative NLO QCD evolution of GPDs</li>
 <li>Calculation of deeply virtual Compton scattering (DVCS) and deeply virtual meson production (DVMP) observables to NLO accuracy.</li>
 <li>Fitting parametrized models to the experimental data.</li>
@@ -14795,9 +14795,10 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Sources are on <code>github.com</code>, but you can just install it as any Python package</p>
+<p>Sources are on <code>github.com</code>, but you can just install it as any "official" Python package</p>
 
 <pre><code>% pip install gepard</code></pre>
+<p>For interactive work, it is best to use Jupyter notebooks.</p>
 
 </div>
 </div>
@@ -14851,11 +14852,12 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Simple-use">Simple use<a class="anchor-link" href="#Simple-use">&#182;</a></h2><p>(Just want to calculate observables / CFFs / GPDs for available models.)</p>
 <p><code>DataPoint</code> object: contains information about kinematics and, possibly, about particular measurement perfomed at that kinematics</p>
+<p><code>Theory</code> object: contains algorithms for evaluation of various structure functions (CFFs, GPDs, …) and observables (cross-sections, asymmetries, …) for a given data point</p>
 
 </div>
 </div>
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14871,19 +14873,7 @@ div.jp-OutputPrompt {
 </div>
 </div>
 
-</div></div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>Theory</code> object: contains algorithms for evaluation of various structure functions (CFFs, GPDs, …) and observables (cross-sections, asymmetries, …) for a given data point</p>
-
-</div>
-</div>
-</div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14891,7 +14881,7 @@ div.jp-OutputPrompt {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gepard.fits</span> <span class="kn">import</span> <span class="n">th_KM15</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gepard.fits</span> <span class="kn">import</span> <span class="n">th_KM15</span>  <span class="c1"># models/fits have to be imported first</span>
 <span class="n">th_KM15</span><span class="o">.</span><span class="n">XGAMMA</span><span class="p">(</span><span class="n">pt</span><span class="p">)</span>   <span class="c1"># gamma* cross-section</span>
 </pre></div>
 
@@ -14925,15 +14915,15 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gepard.plots</span> <span class="kn">import</span> <span class="n">jbod</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">th_KM15</span><span class="o">.</span><span class="n">ImH</span><span class="p">(</span><span class="n">pt</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14941,15 +14931,171 @@ div.jp-OutputPrompt {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>2.807544271408012</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Experimetal measurement datapoint:</span>
+<span class="n">pt</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">DataPoint</span><span class="p">(</span><span class="n">xB</span><span class="o">=</span><span class="mf">0.348</span><span class="p">,</span> <span class="n">t</span><span class="o">=-</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">Q2</span><span class="o">=</span><span class="mf">3.</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">process</span><span class="o">=</span><span class="s1">&#39;ep2epgamma&#39;</span><span class="p">,</span> <span class="n">exptype</span><span class="o">=</span><span class="s1">&#39;fixed target&#39;</span><span class="p">,</span> <span class="n">in1energy</span><span class="o">=</span><span class="mf">6.</span><span class="p">,</span> <span class="n">in1charge</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">in1polarization</span><span class="o">=+</span><span class="mi">1</span><span class="p">,</span>
+<span class="n">observable</span><span class="o">=</span><span class="s1">&#39;XS&#39;</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="mf">0.21</span><span class="p">,</span> <span class="n">err</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+
+<span class="n">pt</span><span class="o">.</span><span class="n">W</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">xi</span>   <span class="c1"># auto-calculated kinematics</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(2.5497144988314844, 0.21065375302663436)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">jbod</span><span class="p">(</span><span class="n">points</span><span class="o">=</span><span class="n">g</span><span class="o">.</span><span class="n">dset</span><span class="p">[</span><span class="mi">32</span><span class="p">],</span> <span class="n">lines</span><span class="o">=</span><span class="n">th_KM15</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">describe_data</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">dset</span><span class="p">[</span><span class="mi">32</span><span class="p">])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>npt x obs     collab  FTn    id  ref.        
+----------------------------------------------
+18 x AC      HERMES  0.0    32  arXiv:0909.3587
+18 x AC      HERMES  1.0    32  arXiv:0909.3587
+----------------------------------------------
+TOTAL = 36
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">th_KM15</span><span class="o">.</span><span class="n">chisq</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">dset</span><span class="p">[</span><span class="mi">32</span><span class="p">])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>20.525561762363605</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gepard.plots</span> <span class="kn">import</span> <span class="n">jbod</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">jbod</span><span class="p">(</span><span class="n">points</span><span class="o">=</span><span class="n">g</span><span class="o">.</span><span class="n">dset</span><span class="p">[</span><span class="mi">32</span><span class="p">],</span> <span class="n">lines</span><span class="o">=</span><span class="n">th_KM15</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14987,7 +15133,7 @@ jp-needs-light-background
 
 </div>
 
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
