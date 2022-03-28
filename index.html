@@ -15101,7 +15101,7 @@ TOTAL = 36
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gepard.plots</span> <span class="kn">import</span> <span class="n">jbod</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gepard.plots</span> <span class="kn">import</span> <span class="n">jbod</span>  <span class="c1"># just a bunch of data</span>
 <span class="n">fig</span> <span class="o">=</span> <span class="n">jbod</span><span class="p">(</span><span class="n">points</span><span class="o">=</span><span class="n">g</span><span class="o">.</span><span class="n">dset</span><span class="p">[</span><span class="mi">32</span><span class="p">],</span> <span class="n">lines</span><span class="o">=</span><span class="n">th_KM15</span><span class="p">)</span>
 </pre></div>
 
@@ -15240,7 +15240,7 @@ TOTAL = 18
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">th</span><span class="o">.</span><span class="n">chisq</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>  <span class="c1"># catastrofic chi-square</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">th</span><span class="o">.</span><span class="n">chisq</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>  <span class="c1"># catastrophic chi-square</span>
 </pre></div>
 
      </div>
@@ -15273,6 +15273,22 @@ TOTAL = 18
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div></div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15282,6 +15298,7 @@ TOTAL = 18
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Construction of Fitter object</span>
+<span class="c1"># ... relying on iminuit package</span>
 <span class="n">f</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">MinuitFitter</span><span class="p">(</span><span class="n">pts</span><span class="p">,</span> <span class="n">th</span><span class="p">)</span>
 <span class="c1"># Adjusting sea-quarks normalization and t-dependence</span>
 <span class="n">f</span><span class="o">.</span><span class="n">release_parameters</span><span class="p">(</span><span class="s1">&#39;ns&#39;</span><span class="p">,</span> <span class="s1">&#39;ms2&#39;</span><span class="p">,</span> <span class="s1">&#39;secs&#39;</span><span class="p">)</span>
@@ -15342,7 +15359,7 @@ TOTAL = 18
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span><span class="o">.</span><span class="n">minuit</span><span class="o">.</span><span class="n">covariance</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span><span class="o">.</span><span class="n">minuit</span><span class="o">.</span><span class="n">covariance</span>  <span class="c1"># access iminuit functionalities</span>
 </pre></div>
 
      </div>
@@ -16906,6 +16923,135 @@ jp-needs-light-background
 >
 </div>
 
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Most of the functions are thoroughly documented:</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">DataPoint</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Kinematical point. May correspond to actual measurement.
+
+    Args:
+        xB (float): Bjorken x_B
+        t (float): momentum transfer to target squared
+        Q2 (float): Q^2
+        phi (float): azimuthal angle
+        FTn (int): harmonic of azimuthal angle, e.g. -1 for sin(phi)
+        observable (str): name of the measured observable
+        val (float): measurement value
+        err (float): total uncertainty of `val`
+        units (dict): pysical units of variables
+        kindict (dict): for old, alternative passing of kinematics values,
+                 like ``g.DataPoint({&#39;xB&#39;: 0.1, &#39;t&#39;: -0.2, &#39;Q2&#39;: 4.0})``
+
+    There are other args as well.
+
+    Examples:
+            &gt;&gt;&gt; pt = g.DataPoint(xB=0.1, t=-0.2, Q2=4.0)
+
+    Todo:
+        `kindict` is temporarily kept for backward compatibility.
+        You should not rely on it.
+
+    
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Large suite of tests:</span>
+<span class="o">!</span>pytest /home/kkumer/gepard/tests
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform linux -- Python 3.10.2, pytest-7.1.1, pluggy-1.0.0
+rootdir: /home/kkumer/gepard, configfile: pytest.ini
+plugins: cov-2.12.1, typeguard-2.13.3, profiling-1.7.0, anyio-3.5.0
+collected 111 items                                                            <span class="ansi-bold">
+
+../../gepard/tests/GK_test.py </span><span class="ansi-green-intense-fg ansi-bold">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">                                 [  9%]</span>
+../../gepard/tests/adacf_test.py <span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">                                       [  9%]</span>
+../../gepard/tests/cff_test.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">s</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">s</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">                    [ 29%]</span>
+../../gepard/tests/dvmp_test.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">s</span><span class="ansi-yellow-fg">                                    [ 34%]</span>
+../../gepard/tests/elastic_ff_test.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">                            [ 40%]</span>
+../../gepard/tests/evol_test.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">                                    [ 45%]</span>
+../../gepard/tests/fit_test.py <span class="ansi-yellow-fg">s</span><span class="ansi-yellow-fg">s</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">s</span><span class="ansi-yellow-fg">s</span><span class="ansi-yellow-fg">                                     [ 49%]</span>
+../../gepard/tests/fits_KM_test.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">s</span><span class="ansi-yellow-fg">s</span><span class="ansi-yellow-fg">s</span><span class="ansi-yellow-fg">s</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">s</span><span class="ansi-yellow-fg">                              [ 56%]</span>
+../../gepard/tests/gpd_test.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">                                  [ 63%]</span>
+../../gepard/tests/observables_test.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">s</span><span class="ansi-yellow-fg">s</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">             [ 82%]</span>
+../../gepard/tests/special_test.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">                               [ 89%]</span>
+../../gepard/tests/theory_test.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-yellow-fg">s</span><span class="ansi-yellow-fg">                           [100%]</span>
+
+<span class="ansi-yellow-fg">=============================== warnings summary ===============================</span>
+../../gepard/src/gepard/quadrature.py:9
+  /home/kkumer/gepard/src/gepard/quadrature.py:9: DeprecationWarning: Please use `p_roots` from the `scipy.special` namespace, the `scipy.special.orthogonal` namespace is deprecated.
+    from scipy.special.orthogonal import p_roots
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+<span class="ansi-yellow-fg">================== </span><span class="ansi-green-fg">96 passed</span>, <span class="ansi-yellow-intense-fg ansi-bold">15 skipped</span>, <span class="ansi-yellow-intense-fg ansi-bold">1 warning</span><span class="ansi-yellow-fg"> in 5.61s</span><span class="ansi-yellow-fg"> ===================</span>
+</pre>
+</div>
 </div>
 
 </div>
